@@ -9,6 +9,8 @@
 #include "Controller_Test_Snippet.h"
 // #include <Controller/Controller_DHT.h>
 #include "Controller_SR04.h"
+#include "Controller_LM35.h"
+#include "Controller_DS18B20.h"
 
 
 // // Include I2C Device
@@ -39,6 +41,8 @@ void AddManagerContent_Device()
   manager_Content.my_Devices_List.add(&Dht_Device);
   // manager_Content.my_Devices_List.add(&sieuAm_Device);
   manager_Content.my_Devices_List.add(&SR04_Device);
+  manager_Content.my_Devices_List.add(&LM35_Device);
+  manager_Content.my_Devices_List.add(&DS18B20_Device);
 
 }
 
